@@ -12,7 +12,7 @@ func main() {
 	var ar4 = [3]bool{true, false, false}
 	fmt.Println(ar4)
 	fmt.Println(len(ar3), len(ar4), ar3)
-
+	fmt.Println("*************")
 	//2d array
 	var twoD = [2][4]int{{}, {4, 44, 5, 7}}
 	fmt.Println(twoD, twoD[1][3])
