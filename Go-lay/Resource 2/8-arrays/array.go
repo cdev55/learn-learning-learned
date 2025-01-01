@@ -6,6 +6,7 @@ func main() {
 	var ar1 [4]int
 	var ar2 = [4]int{1, 4, 6, 7}
 	ar3 := [4]string{"go", "js", "", "java"}
+
 	ar3[2] = "node"
 	fmt.Println(ar1, ar2, ar3)
 
