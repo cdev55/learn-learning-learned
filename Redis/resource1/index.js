@@ -12,6 +12,7 @@ const redisClient = createClient();
   await redisClient.connect();
 })();
 
+
 app.get("/photos", async (req, res) => {
   const albumId = req.query.albumId;
   const photos = await getOrSetCache(`photos?albumId:${albumId}`, async () => {
