@@ -12,7 +12,7 @@ app.post("/posts", (req, res) => {
   const { content } = req?.body;
   const post = { id, content };
   posts[id] = post;
-  res.status(200).send(posts);
+  res.status(201).send(posts);
 });
 
 app.get("/posts", (req, res) => {
