@@ -14,7 +14,8 @@ res.status(201).send(commentsByPostId[req.params.id] || []);
 })
 
 app.post("/post/:id/comments",(req,res)=>{
-  const commentId = crypto.randomBytes(16).toString("hex");
+  const commentId = crypto.randomUUID();
+  // const commentId = crypto.randomBytes(16).toString("hex");
   const {content}=req.body;
   const comments=commentsByPostId[req.params.id] || [];
   comments.push({id:commentId,content});

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+     app: user
+  template:
+    metadata:
+      labels:
+        app: user
+    spec:
+      containers:
+        - name: user
+          image: devdok55/kube-demo-user:latest
+          env:
+          - name: AUTH_ADDRESS
+            value: "auth-service.default"
+            # value: 10.104.70.154
+          

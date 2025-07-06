@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+     app: task
+  template:
+    metadata:
+      labels:
+        app: task
+    spec:
+      containers:
+        - name: task
+          image: devdok55/kube-demo-task:latest
+          env:
+          - name: AUTH_ADDRESS
+            value: "auth-service.default"
+            # value: 10.104.70.154
+          - name: TASKS_FOLDER
+            value: "task"
