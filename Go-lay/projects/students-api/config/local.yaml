@@ -1,0 +1,4 @@
+env: "dev"
+storage_path: "storage/storage.db"
+httpServer:
+  address: "localhost:5000"
