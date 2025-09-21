@@ -1,11 +1,11 @@
 class node{
     constructor(data,next){
         this.data=data;
-        this.next=next;
+        this.next=next
     }
 }
 
-function findStartingPoint(head){
+function lengthOfLoop(head){
     let slow=head;
     let fast=head;
 
@@ -14,13 +14,14 @@ function findStartingPoint(head){
         fast=fast.next.next;
 
         if(slow===fast){
-            slow=head;
+            let counter=1
+            fast=fast.next;
             while(slow!==fast){
-                slow=slow.fast;
+                counter++;
                 fast=fast.next;
             }
-            return slow;
+            return counter
         }
     }
-return null;
+    return 0;
 }
