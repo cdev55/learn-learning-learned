@@ -11,6 +11,5 @@ var charFrequencySort = function(s) {
     for (const [char, freq] of pq) {
         result += char.repeat(freq);
     }
-    
     return result;
 };
