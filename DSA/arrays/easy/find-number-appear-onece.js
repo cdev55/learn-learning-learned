@@ -4,4 +4,5 @@ function findNumberThatAppearOnce(arr) {
     xor = xor ^ num;
   }
   return xor;
+  
 }
