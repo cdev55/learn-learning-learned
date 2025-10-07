@@ -16,5 +16,6 @@ function sortColors(arr) {
     [arr[high], arr[i]] = [arr[i], arr[high]];
     high--;
   }
+  return arr;
 }
 
