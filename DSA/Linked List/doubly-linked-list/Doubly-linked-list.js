@@ -145,5 +145,4 @@ class DoublyLinkedList {
         return data;
     }
     
- 
 }
