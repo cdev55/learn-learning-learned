@@ -144,5 +144,4 @@ class DoublyLinkedList {
         this.size--;
         return data;
     }
-    
 }
