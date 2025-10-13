@@ -119,7 +119,7 @@ class DoublyLinkedList {
         this.size++;
     }
     
- 
+
     removeAt(index) {
         if (index < 0 || index >= this.size) return null;
     
