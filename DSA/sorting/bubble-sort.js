@@ -13,6 +13,6 @@ function bubbleSort(arr){
             break;
         }
     }
-    
+
     return arr;
 }
