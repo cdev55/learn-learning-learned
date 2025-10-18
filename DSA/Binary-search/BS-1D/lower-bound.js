@@ -13,4 +13,5 @@ function lowerBound(arr, x) {
     }
   }
   return ans;
+  
 }
