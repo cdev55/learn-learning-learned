@@ -12,8 +12,5 @@ function lowerBound(arr, x) {
       low = mid + 1;
     }
   }
-  return ans;
-
-
-  
+  return ans;  
 }
