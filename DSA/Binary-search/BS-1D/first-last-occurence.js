@@ -6,4 +6,6 @@ function firstLastOccurence(arr,x){
 function lowerBound(arr,x){
 const n=arr.length;
 
+
+
 }
