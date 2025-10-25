@@ -5,7 +5,7 @@ function lowerBound(arr, x) {
   let ans = n;
   while (low <= high) {
     let mid = Math.floor((low + high) / 2);
-    if (arr[mid] <= x) {
+    if (arr[mid] >= x) {
       ans = mid;
       high = mid - 1;
     } else {
