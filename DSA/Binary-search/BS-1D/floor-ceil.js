@@ -11,7 +11,7 @@ function getFloor(arr, x) {
   while (low <= high) {
     let mid = Math.floor((low + high) / 2);
     if (arr[mid] <= x) {
-      ans = mid;
+      ans = arr[mid];
       low = mid + 1;
     } else {
       high = mid -1;
@@ -28,7 +28,7 @@ function getCeil(arr, x) {
     while (low <= high) {
       let mid = Math.floor((low + high) / 2);
       if (arr[mid] >= x) {
-        ans = mid;
+        ans = arr[mid];
         high = mid - 1;
       } else {
         low = mid + 1;
