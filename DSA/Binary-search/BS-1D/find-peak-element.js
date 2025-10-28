@@ -1,4 +1,5 @@
 function findPeakElement(arr){
+    
     const n=arr.length;
     let low=1,high=n-1;
     if(n===1){
