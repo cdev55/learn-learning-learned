@@ -1,5 +1,5 @@
 function findPeakElement(arr){
-    
+
     const n=arr.length;
     let low=1,high=n-1;
     if(n===1){
@@ -12,7 +12,7 @@ function findPeakElement(arr){
         return n-1;
     }
     while(low<=high){
-        let mid=Math.min((low+high)/2);
+        let mid=Math.floor((low+high)/2);
 
         if(arr[mid]>arr[mid+1]&& arr[mid]<arr[mid-1]){
             return mid

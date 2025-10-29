@@ -12,7 +12,7 @@ function findSingleElement(arr) {
     return arr[n - 1];
   }
   while (low <= high) {
-    let mid = Math.min((low + high) / 2);
+    let mid = Math.floor((low + high) / 2);
     if (arr[mid - 1] !== arr[mid] && arr[mid] !== arr[mid + 1]) {
         return arr[mid]
     }
