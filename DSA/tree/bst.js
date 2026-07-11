@@ -53,4 +53,13 @@ class binarySearchTree {
     }
   }
 
+  preOrder(root){
+    if(root.value===null){
+        return null;
+    }
+    console.log(root.value);
+    this.preOrder(root.left);
+    this.preOrder(root.right);
+  }
+
 }
