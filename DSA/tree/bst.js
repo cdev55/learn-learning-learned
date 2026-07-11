@@ -53,31 +53,45 @@ class binarySearchTree {
     }
   }
 
-  preOrder(root){
-    if(root.value===null){
-        return null;
+  preOrder(root) {
+    if (root.value === null) {
+      return null;
     }
     console.log(root.value);
     this.preOrder(root.left);
     this.preOrder(root.right);
   }
 
-  inOrder(root){
-    if(root.value===null){
-        return null
+  inOrder(root) {
+    if (root.value === null) {
+      return null;
     }
-    this.inOrder(root.left)
-    console.log(root.value)
-    this.inOrder(root.right)
+    this.inOrder(root.left);
+    console.log(root.value);
+    this.inOrder(root.right);
   }
 
-  postOrder(root){
-    if(root.value===null){
-        return null
+  postOrder(root) {
+    if (root.value === null) {
+      return null;
     }
     this.postOrder(root.left);
     this.postOrder(root.right);
     console.log(root.value);
   }
 
+  levelTravesal() {
+    const stack = [];
+    stack.push(this.root);
+    while (stack.length) {
+      let current = stack.shift();
+      console.log(current.value);
+      if (current.left) {
+        stack.push(current.left);
+      }
+      if (current.right) {
+        stack.push(current.right);
+      }
+    }
+  }
 }
