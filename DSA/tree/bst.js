@@ -62,4 +62,22 @@ class binarySearchTree {
     this.preOrder(root.right);
   }
 
+  inOrder(root){
+    if(root.value===null){
+        return null
+    }
+    this.inOrder(root.left)
+    console.log(root.value)
+    this.inOrder(root.right)
+  }
+
+  postOrder(root){
+    if(root.value===null){
+        return null
+    }
+    this.postOrder(root.left);
+    this.postOrder(root.right);
+    console.log(root.value);
+  }
+
 }
